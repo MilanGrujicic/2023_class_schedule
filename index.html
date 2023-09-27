@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>A Class Schedule</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="icon" tpe="image/x-icon" href="media/calendar_favicon.png">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="description" content="A basic class schedule">
+    <meta name="keywords" content="schedule,school">
+    <meta name="author" content="Milan_Grujicic">
+    <script src='main.js'></script>
+</head>
+<body>
+    <h1>A Class Schedule</h1>
+    <h2>Semester 1/2 2023</h2>
+        <table border=1 frame=void rules=rows>
+            <thead>
+                <tr class="header_table">
+                    <th class="empty"></th>
+                    <th>MONDAY</th>
+                    <th>TUESDAY</th>
+                    <th>WEDNESDAY</th>
+                    <th>THURSDAY</th>
+                    <th>FRIDAY</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="header_table">08:00</td>
+                    <td>MATH</td>
+                    <td>PHYSICS</td>
+                    <td>BIOLOGY</td>
+                    <td>BIOLOGY</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="header_table">09:00</td>
+                    <td></td>
+                    <td>MATH</td>
+                    <td></td>
+                    <td>ENGLISH</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="header_table">10:00</td>
+                    <td>CHEMISTRY</td>
+                    <td></td>
+                    <td>PHYSICS</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="header_table">11:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>CHEMISTRY</td>
+                </tr>
+                <tr>
+                    <td class="header_table">12:00</td>
+                    <td>LUNCH</td>
+                    <td>LUNCH</td>
+                    <td>LUNCH</td>
+                    <td>LUNCH</td>
+                    <td>LUNCH</td>
+                </tr>
+                <tr>
+                    <td class="header_table">13:00</td>
+                    <td>ENGLISH</td>
+                    <td></td>
+                    <td>CHESS PRACTICE</td>
+                    <td>CHESS PRACTICE</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td class="header_table">14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>CHESS PRACTICE</td>
+                    <td>CHESS PRACTICE</td>
+                    <td>ACTING</td>
+                </tr>
+                <tr>
+                    <td class="header_table">15:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>ACTING</td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript">
+
+            const api_url ="https://zenquotes.io/api/quotes/";
+            
+            async function getapi(url)
+            {
+              const response = await fetch(url);
+              var data = await response.json();
+              console.log(data);
+            }
+            
+            getapi(api_url);
+            
+        </script>    
+</body>
+<footer>
+    Made by <a href="https://github.com/MilanGrujicic" target="_blank" class="link">@Milan_Grujicic</a>
+</footer>
+</html>
