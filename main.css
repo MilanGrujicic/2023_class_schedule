@@ -14,7 +14,6 @@ footer {
     width: 50%;
     bottom: 10px;
     color:white;
-    border:3px;
 }
 h1,h2 {
     text-align-last: center;
@@ -24,12 +23,13 @@ table {
     margin-right: auto;
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
-    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;    background: rgba(0,0,0,0.4);
+    box-shadow: rgb(85, 91, 255) 0px 0px 0px 3px, rgb(31, 193, 27) 0px 0px 0px 6px, rgb(255, 217, 19) 0px 0px 0px 9px, rgb(255, 156, 85) 0px 0px 0px 12px, rgb(255, 85, 85) 0px 0px 0px 15px;    
+    background: rgba(0,0,0,0.4);
 }
 
 .header_table {
     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-    font-family: sans; color: black;
+    color: black;
 }
 
 th, td {
@@ -40,10 +40,6 @@ th, td {
 
 td{
     border-spacing: 100px;
-}
-
-.empty {
-    background-color: transparent;
 }
 
 .link {
