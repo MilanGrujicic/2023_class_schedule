@@ -11,39 +11,43 @@
     <meta name="description" content="A basic class schedule">
     <meta name="keywords" content="schedule,school">
     <meta name="author" content="Milan_Grujicic">
-    <script src='main.js'></script>
+    <script src='src/main.js'></script>
 </head>
 <body>
-    <h1>A Class Schedule</h1>
-    <h2>Semester 1/2 2023</h2>
+    <div class="container">
+        <h1 id="header01">A Class Schedule</h1>
+        <h2 id="header02"> Semester 1/2 2023 </h2>
+        <button id="language-buttons" class="topRightButtonEng" onclick="translateText('en')">🇬🇧 English</button>
+        <button id="language-buttons" class="topRightButtonSpa" onclick="translateText('sp')">🇪🇦 Spanish</button>
+    </div>
         <table border=1 frame=void rules=rows>
             <thead>
                 <tr class="header_table">
-                    <th class="empty"></th>
-                    <th>MONDAY</th>
-                    <th>TUESDAY</th>
-                    <th>WEDNESDAY</th>
-                    <th>THURSDAY</th>
-                    <th>FRIDAY</th>
+                    <th></th>
+                    <th id="monday">MONDAY</th>
+                    <th id="tuesday">TUESDAY</th>
+                    <th id="wednesday">WEDNESDAY</th>
+                    <th id="thursday">THURSDAY</th>
+                    <th id="friday">FRIDAY</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td class="header_table">08:00</td>
                     <td>
-                        <div>MATH</div>
+                        <div id="math">MATH</div>
                         <div>Geometry Gina</div>
                     </td>
                     <td>
-                        <div>PHYSICS</div>
+                        <div id="physics">PHYSICS</div>
                         <div>Dr. Book Worm</div>
                     </td>
                     <td>
-                        <div>BIOLOGY</div>
+                        <div id="biology">BIOLOGY</div>
                         <div>Mr. Brainiac Brawn</div>
                     </td>
                     <td>
-                        <div>BIOLOGY</div>
+                        <div id="biology2">BIOLOGY</div>
                         <div>Mr. Brainiac Brawn</div>
                     </td>
                     <td></td>
@@ -52,12 +56,12 @@
                     <td class="header_table">09:00</td>
                     <td></td>
                     <td>
-                        <div>MATH</div>
+                        <div id="math2">MATH</div>
                         <div>Geometry Gina</div>
                     </td>
                     <td></td>
                     <td>
-                        <div>ENGLISH</div>
+                        <div id="english">ENGLISH</div>
                         <div>Miss Wizbang</div>
                     </td>
                     <td></td>
@@ -65,12 +69,12 @@
                 <tr>
                     <td class="header_table">10:00</td>
                     <td>
-                        <div>CHEMISTRY</div>
+                        <div id="chemistry">CHEMISTRY</div>
                         <div>Calculus Carl</div>
                     </td>
                     <td></td>
                     <td>
-                        <div>PHYSICS</div>
+                        <div id="physics2">PHYSICS</div>
                         <div>Dr. Book Worm</div>
                     </td>
                     <td></td>
@@ -83,36 +87,36 @@
                     <td></td>
                     <td></td>
                     <td>
-                        <div>CHEMISTRY</div>
+                        <div id="chemistry2">CHEMISTRY</div>
                         <div>Calculus Carl</div>
                     </td>
                 </tr>
                 <tr>
                     <td class="header_table">12:00</td>
-                    <td>LUNCH</td>
-                    <td>LUNCH</td>
-                    <td>LUNCH</td>
-                    <td>LUNCH</td>
-                    <td>LUNCH</td>
+                    <td id="lunch">LUNCH</td>
+                    <td id="lunch2">LUNCH</td>
+                    <td id="lunch3">LUNCH</td>
+                    <td id="lunch4">LUNCH</td>
+                    <td id="lunch5">LUNCH</td>
                 </tr>
                 <tr>
                     <td class="header_table">13:00</td>
                     <td>
-                        <div>ENGLISH</div>
+                        <div id="english2">ENGLISH</div>
                         <div>Miss Wizbang</div>
                     </td>
                     <td></td>
-                    <td>CHESS PRACTICE</td>
-                    <td>CHESS PRACTICE</td>
+                    <td id="chess">CHESS PRACTICE</td>
+                    <td id="chess2">CHESS PRACTICE</td>
                     <td></td>
                 </tr>
                 <tr>
                     <td class="header_table">14:00</td>
                     <td></td>
                     <td></td>
-                    <td>CHESS PRACTICE</td>
-                    <td>CHESS PRACTICE</td>
-                    <td>ACTING</td>
+                    <td id="chess3">CHESS PRACTICE</td>
+                    <td id="chess4">CHESS PRACTICE</td>
+                    <td id="acting">ACTING</td>
                 </tr>
                 <tr>
                     <td class="header_table">15:00</td>
@@ -120,10 +124,11 @@
                     <td></td>
                     <td></td>
                     <td></td>
-                    <td>ACTING</td>
+                    <td id="acting2">ACTING</td>
                 </tr>
             </tbody>
         </table>
+        <!--
         <script type="text/javascript">
 
             const api_url ="https://zenquotes.io/api/quotes/";
@@ -137,9 +142,9 @@
             
             getapi(api_url);
             
-        </script>    
+        </script>    -->
 </body>
 <footer>
-    Made by <a href="https://github.com/MilanGrujicic" target="_blank" class="link">@Milan_Grujicic</a>
+    <div id="footer">Made by</div><a href="https://github.com/MilanGrujicic" target="_blank" class="link">@Milan_Grujicic</a>
 </footer>
 </html>

@@ -18,6 +18,25 @@ footer {
 h1,h2 {
     text-align-last: center;
 }
+
+.container {
+    position: relative;
+}
+  
+.topRightButtonEng {
+    position: absolute;
+    top: 8px;
+    right: 120px;
+    font-size: 18px;
+}
+
+.topRightButtonSpa {
+    position: absolute;
+    top: 8px;
+    right: 0px;
+    font-size: 18px;
+}
+
 table {
     margin-left: auto;
     margin-right: auto;
