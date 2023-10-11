@@ -66,7 +66,14 @@ const translations = {
   
   // Locate the select dropdown
   const languageDropdown = document.getElementById("language-buttons");
-  
+  const api_url ="https://api.quotable.io/random/";
+  async function getapi(url)
+  {
+  const response = await fetch(url);
+  var data = await response.json();
+  document.getElementById("custom-div").innerHTML = data['content'];
+  }
+  getapi(api_url);
   // Add an event listener on the select dropdown
   languageDropdown.addEventListener("change", () => {
     // Figure out which language was selected
